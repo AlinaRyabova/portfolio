@@ -19,7 +19,6 @@ export function About() {
     <section id="about" className="py-24 bg-white">
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row gap-12 md:gap-16 items-start">
-          {/* ЗМІНА: sticky працює тільки на md (планшет/десктоп) */}
           <div className="w-full md:w-1/2 md:sticky md:top-24">
             <h2 className="text-3xl md:text-4xl font-bold text-brand-900 mb-6 flex items-center gap-3">
               <span className="w-12 h-1 bg-brand-600 rounded-full" />
