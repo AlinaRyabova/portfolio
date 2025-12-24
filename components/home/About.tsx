@@ -29,9 +29,7 @@ export function About() {
               {about.description}
             </p>
             <div className="p-6 bg-brand-50 rounded-2xl border border-brand-100">
-              <p className="text-brand-800 italic font-medium">
-                "{about.quote}"
-              </p>
+              <p className="text-brand-800 italic font-medium">{about.quote}</p>
             </div>
           </div>
 
