@@ -18,8 +18,9 @@ export function About() {
   return (
     <section id="about" className="py-24 bg-white">
       <div className="container mx-auto px-6">
-        <div className="flex flex-col md:flex-row gap-16 items-start">
-          <div className="md:w-1/2 sticky top-24">
+        <div className="flex flex-col md:flex-row gap-12 md:gap-16 items-start">
+          {/* ЗМІНА: sticky працює тільки на md (планшет/десктоп) */}
+          <div className="w-full md:w-1/2 md:sticky md:top-24">
             <h2 className="text-3xl md:text-4xl font-bold text-brand-900 mb-6 flex items-center gap-3">
               <span className="w-12 h-1 bg-brand-600 rounded-full" />
               {about.title}
@@ -28,11 +29,13 @@ export function About() {
               {about.description}
             </p>
             <div className="p-6 bg-brand-50 rounded-2xl border border-brand-100">
-              <p className="text-brand-800 italic font-medium">{about.quote}</p>
+              <p className="text-brand-800 italic font-medium">
+                "{about.quote}"
+              </p>
             </div>
           </div>
 
-          <div className="md:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div className="w-full md:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-6">
             {about.features.map((feature, idx) => {
               const IconData = icons[idx];
               const Icon = IconData.icon;
