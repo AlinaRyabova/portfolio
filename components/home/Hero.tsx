@@ -12,19 +12,16 @@ export function Hero() {
 
   return (
     <section className="relative min-h-screen flex items-center pt-24 pb-12 overflow-hidden bg-gradient-to-b from-brand-50 to-white">
-      {/* Фонові плями - трохи менші для мобільного */}
       <div className="absolute top-0 right-0 -z-10 w-[300px] md:w-[500px] h-[300px] md:h-[500px] bg-brand-100 rounded-full blur-[80px] md:blur-[120px] opacity-70" />
       <div className="absolute bottom-0 left-0 -z-10 w-[300px] md:w-[400px] h-[300px] md:h-[400px] bg-accent-400/20 rounded-full blur-[80px] md:blur-[120px] opacity-70" />
 
       <div className="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
-        {/* Текстова частина */}
         <div className="flex flex-col gap-6 animate-in slide-in-from-left duration-700 order-2 md:order-1">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-brand-100 text-brand-600 w-fit shadow-sm">
             <span className="w-2 h-2 rounded-full bg-brand-600 animate-pulse" />
             <span className="text-sm font-medium">{hero.role}</span>
           </div>
 
-          {/* Зменшили шрифт для мобільного (text-4xl) */}
           <h1 className="text-4xl md:text-7xl font-bold leading-tight text-brand-900">
             {hero.title.split(" ").map((word, i) => (
               <span
@@ -78,7 +75,6 @@ export function Hero() {
           </div>
         </div>
 
-        {/* Фото - тепер видиме на мобільному (block замість hidden) */}
         <div className="relative block animate-in slide-in-from-right duration-700 delay-200 max-w-[320px] md:max-w-[400px] mx-auto w-full order-1 md:order-2 mb-8 md:mb-0">
           <div className="absolute inset-0 bg-gradient-to-tr from-brand-600 to-accent-500 rounded-[2rem] rotate-6 opacity-20 blur-2xl" />
           <div className="relative bg-white p-2 rounded-[2rem] shadow-2xl shadow-brand-900/10 rotate-3 hover:rotate-0 transition-all duration-500 overflow-hidden aspect-[4/5] border border-white group">
@@ -88,7 +84,7 @@ export function Hero() {
                 alt="Alina Riabova"
                 fill
                 priority
-                className="object-cover transition-transform duration-700 group-hover:scale-105"
+                className="object-cover object-top transition-transform duration-700 group-hover:scale-105"
               />
             </div>
           </div>
