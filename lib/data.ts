@@ -25,9 +25,19 @@ export const DATA = {
     about: {
       title: "About Me",
       description:
-        "I am a disciplined Junior Developer ensuring high-quality results. Currently mastering Software Engineering at Neoversity (Master's degree). My background in management (Head of Pharmacy, 25 years) helps me effectively communicate in teams and solve complex problems.",
+        "Master's degree in Software Engineering with 25 years of unique management experience (pharmacy manager). I have transformed pharmaceutical precision into digital code, focusing on developing reliable and scalable systems. My discipline and ability to make critical decisions under pressure are what I bring to every line of code.",
       quote:
-        "My background in pharmacy taught me precision and responsibility. Now I apply these principles to build reliable backend systems.",
+        "Pharmacy taught me that every detail matters and that mistakes are unacceptable. Today, I apply these principles to build architecturally sound backends and intuitive interfaces.",
+      documents: {
+        diploma: {
+          label: "Diploma",
+          href: "/docs/diploma.pdf",
+        },
+        grades: {
+          label: "Transcript",
+          href: "/docs/grades.pdf",
+        },
+      },
       features: [
         {
           title: "25 Years Management",
@@ -106,6 +116,24 @@ export const DATA = {
             github: "https://github.com/AlinaRyabova/FreedomCamper",
           },
         },
+        {
+          title: "BioTechnica",
+          role: "Fullstack Developer (Support & Dev)",
+          description:
+            "The official website of the Institute of Engineering and Technology. Work on the user interface, performance optimization, and website support.",
+          tags: [
+            "Next.js 16",
+            "JavaScript",
+            "PHP",
+            "UI/UX Optimization",
+            "Support",
+          ],
+          image: "/projects/biotechnica.jpg",
+          links: {
+            demo: "https://www.biotechnica.od.ua",
+            github: "",
+          },
+        },
       ],
     },
     footer: {
@@ -126,9 +154,19 @@ export const DATA = {
     about: {
       title: "Про мене",
       description:
-        "Я дисциплінований Junior розробник, націлений на якісний результат. Зараз здобуваю ступінь магістра програмної інженерії в Neoversity. Мій управлінський досвід (завідувач аптеки, 25 років) допомагає мені ефективно комунікувати в команді та вирішувати складні проблеми.",
+        "Магістр програмної інженерії з унікальним 25-річним управлінським досвідом (завідувач аптеки). Я трансформувала фармацевтичну точність у цифровий код, фокусуючись на розробці надійних та масштабованих систем. Моя дисципліна та вміння приймати критичні рішення в стресових ситуаціях — це те, що я приношу в кожен рядок коду.",
       quote:
-        "Мій досвід у фармації навчив мене точності та відповідальності. Тепер я застосовую ці принципи для побудови надійних backend систем.",
+        "Фармація навчила мене, що кожна деталь має значення, а помилка — недопустима. Сьогодні я застосовую ці принципи для побудови архітектурно чистого backend-у та інтуїтивних інтерфейсів.",
+      documents: {
+        diploma: {
+          label: "Диплом",
+          href: "/docs/diploma.pdf",
+        },
+        grades: {
+          label: "Оцінки",
+          href: "/docs/grades.pdf",
+        },
+      },
       features: [
         {
           title: "25 років управління",
@@ -205,6 +243,24 @@ export const DATA = {
           links: {
             demo: "https://freedom-camper.vercel.app",
             github: "https://github.com/AlinaRyabova/FreedomCamper",
+          },
+        },
+        {
+          title: "БіоТехніка",
+          role: "Fullstack розробник (Support & Dev)",
+          description:
+            "Офіційний сайт інженерно-технологічного інституту. Робота над інтерфейсом, оптимізацією продуктивності та підтримкою сайту.",
+          tags: [
+            "Next.js 16",
+            "JavaScript",
+            "PHP",
+            "UI/UX Optimization",
+            "Support",
+          ],
+          image: "/projects/biotechnica.jpg", // Не забудь додати скріншот у public/projects/
+          links: {
+            demo: "https://www.biotechnica.od.ua",
+            github: "", // Якщо репозиторій приватний — залишаємо порожнім
           },
         },
       ],

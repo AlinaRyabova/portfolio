@@ -2,7 +2,13 @@
 
 import React from "react";
 import { useLanguage } from "@/context/LanguageContext";
-import { GraduationCap, Briefcase, Code, UserCheck } from "lucide-react";
+import {
+  GraduationCap,
+  Briefcase,
+  Code,
+  UserCheck,
+  FileCheck,
+} from "lucide-react";
 
 export function About() {
   const { content } = useLanguage();
@@ -27,13 +33,43 @@ export function About() {
             <p className="text-lg text-slate-600 leading-relaxed mb-6">
               {about.description}
             </p>
+
             <div className="p-6 bg-brand-50 rounded-2xl border border-brand-100">
               <p className="text-brand-800 italic font-medium">{about.quote}</p>
+
+              {/* Кнопки документів з відступом mt-6 */}
+              <div className="flex flex-wrap gap-3 mt-6">
+                <a
+                  href={about.documents.diploma.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-4 py-2 bg-white border border-brand-200 rounded-xl text-brand-700 text-sm font-semibold hover:bg-brand-600 hover:text-white transition-all duration-300 shadow-sm group"
+                >
+                  <GraduationCap
+                    size={18}
+                    className="group-hover:rotate-12 transition-transform"
+                  />
+                  {about.documents.diploma.label}
+                </a>
+
+                <a
+                  href={about.documents.grades.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-4 py-2 bg-white border border-brand-200 rounded-xl text-brand-700 text-sm font-semibold hover:bg-brand-600 hover:text-white transition-all duration-300 shadow-sm group"
+                >
+                  <FileCheck
+                    size={18}
+                    className="group-hover:scale-110 transition-transform"
+                  />
+                  {about.documents.grades.label}
+                </a>
+              </div>
             </div>
           </div>
 
           <div className="w-full md:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-6">
-            {about.features.map((feature, idx) => {
+            {about.features.map((feature: any, idx: number) => {
               const IconData = icons[idx];
               const Icon = IconData.icon;
               return (

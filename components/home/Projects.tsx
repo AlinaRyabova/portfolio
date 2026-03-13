@@ -22,7 +22,7 @@ export function Projects() {
           <div className="w-24 h-1 bg-brand-600 rounded-full" />
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-10 max-w-5xl mx-auto">
           {projects.items.map((project, idx) => (
             <div
               key={idx}
